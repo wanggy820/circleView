@@ -1,0 +1,29 @@
+{
+  "name": "JDPay",
+  "version": "0.0.1",
+  "summary": "W",
+  "homepage": "http://weibo.com/xuym1992/",
+  "license": "MIT",
+  "authors": {
+    "wangchunxiang": "http://www.jd.com"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source": {
+    "git": "JRLibrary/JDPay"
+  },
+  "source_files": "**/*.{h,m,podspec}",
+  "resources": [
+    "CBPResource.bundle",
+    "JDPayPaymentCodeResource.bundle"
+  ],
+  "libraries": "JDPayPaymentCodeSDk",
+  "preserve_paths": "JDPay/libJDPayPaymentCodeSDk.a",
+  "xcconfig": {
+    "LIBRARY_SEARCH_PATHS": "$(PROJECT_DIR)/JRLibrary/JDPay"
+  },
+  "ios": {
+    "vendored_libraries": "libJDPayPaymentCodeSDk.a"
+  }
+}

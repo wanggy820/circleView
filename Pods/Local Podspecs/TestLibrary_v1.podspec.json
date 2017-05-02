@@ -1,0 +1,25 @@
+{
+  "name": "TestLibrary_v1",
+  "version": "0.0.1",
+  "summary": "W",
+  "homepage": "http://weibo.com/xuym1992/",
+  "license": "MIT",
+  "authors": {
+    "wangchunxiang": "http://www.jd.com"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source": {
+    "git": "JRLibrary/TestLibrary"
+  },
+  "source_files": "**/*.{h,m,podspec}",
+  "libraries": "TestLibrary",
+  "preserve_paths": "TestLibrary/libTestLibrary.a",
+  "xcconfig": {
+    "LIBRARY_SEARCH_PATHS": "$(PROJECT_DIR)/JRLibrary/TestLibrary"
+  },
+  "ios": {
+    "vendored_libraries": "libTestLibrary.a"
+  }
+}
